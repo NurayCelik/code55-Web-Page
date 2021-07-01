@@ -1,0 +1,62 @@
+
+
+RewriteEngine on
+#Localhostta
+#RewriteCond %{HTTP_HOST} ^code55[NC]
+#RewriteRule ^(.*)$ http://code55/$1 [L,R=301,NC]
+
+#gerçek host natrodaydı
+RewriteCond %{HTTP_HOST} ^code55.com[NC]
+RewriteRule ^(.*)$ http://www.code55.com/$1 [L,R=301,NC]
+
+ErrorDocument 404 /404.php
+ErrorDocument 403 /404.php
+
+RewriteRule ^code55$ index.php [NC,L]
+#RewriteRule ^hakkimizda$ hakkimizda.php [NC,L]
+#RewriteRule ^urunler$ urunler.php [NC,L]
+#RewriteRule ^bize-ulasin$ iletisim.php [NC,L]
+#RewriteRule ^catering$ catering.php [NC,L]
+#RewriteRule ^sitemap.xml$ iletisim.php [NC,L]
+#RewriteRule ^haberler$ medya.php [NC,L]
+RewriteRule ^code55$ index.php [NC,L]
+
+# css, js, resim dosylarını korumak için,
+#RewriteCond %{HTTP_REFERER} !^$
+#RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?code55.com/cafeLezzet [NC]
+#localhostta
+#RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?localhost/code55 [NC]
+#RewriteRule \.(css|js|jpg|gif)$ - [NC,F,L]
+
+#RewriteRule ^urun-([0-9a-zA-Z-_]+)-([0-9]+)$  urun.php?sef=$1&productId=$2 [L,QSA]
+#RewriteRule ^haber-([0-9a-zA-Z-_]+)-([0-9]+)$  medya.php?sef=$1&haberId=$2 [L,QSA]
+#RewriteRule ^medya-([0-9a-zA-Z-_]+)-([0-9]+)$  medya.php?sef=$1&medyaId=$2 [L,QSA]
+#RewriteRule ^Ara-([0-9a-zA-Z-_]+)-([0-9]+)$  search.php?sef=$1&productId=$2 [L,QSA]
+
+<Files /404.php>
+AuthType none
+</Files>
+
+#istediğimiz klasöre erişim engeli
+#ErrorDocument 403 / http://localhost/box/404.php
+
+#güvenlik için bu 3 satırı siteye yüklediğimizde yorum satırından kurtarıcaz. doamin name ne ise o yazılır testsitesi.xyz yerine
+#SSLOptions +StrictRequire
+#SSLRequireSSL
+#SSLRequire %{HTTP_HOST} eq "www.testsitesi.xyz"
+
+
+#Video yüklemek için boyut belirledik
+<IfModule mod_php5.c>
+php_value upload_max_filesize 128M
+php_value post_max_size 128M
+</IfModule>
+
+<IfModule mod_php5.c>
+    #Session timeout
+    #php_value session.cookie_lifetime 900
+    #900 = 15 dakika
+    #php_value session.gc_maxlifetime 900
+    php_value upload_max_filesize 128M
+    php_value post_max_size 128M
+</IfModule>

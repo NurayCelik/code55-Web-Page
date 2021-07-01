@@ -1,0 +1,972 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #68686a;
+}
+
+/********* HEADER *********/
+
+.headerRow {
+  top: 0 !important;
+  margin: 0 auto !important;
+  vertical-align: middle;
+  align-items: center;
+  /*background: rgb(68, 77, 193);
+   background: linear-gradient(
+    312deg,
+    rgba(68, 77, 193, 1) 0%,
+    rgba(93, 108, 243, 1) 100%
+  ); */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bf35bc+-1,5d6cf3+0,bf35bc+0,5d6cf3+71,5d6cf3+71,5d6cf3+100 */
+  /* background: #bf35bc;  */ /* Old browsers */
+  /* background: -moz-linear-gradient(
+    top,
+    #bf35bc -1%,
+    #5d6cf3 0%,
+    #bf35bc 0%,
+    #5d6cf3 71%,
+    #5d6cf3 71%,
+    #5d6cf3 100%
+  );  */ /* FF3.6-15 */
+  /* background: -webkit-linear-gradient(
+    top,
+    #bf35bc -1%,
+    #5d6cf3 0%,
+    #bf35bc 0%,
+    #5d6cf3 71%,
+    #5d6cf3 71%,
+    #5d6cf3 100%
+  ); */ /* Chrome10-25,Safari5.1-6 */
+  /*  background: linear-gradient(
+    to bottom,
+    #bf35bc -1%,
+    #5d6cf3 0%,
+    #bf35bc 0%,
+    #5d6cf3 71%,
+    #5d6cf3 71%,
+    #5d6cf3 100%
+  );  */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf35bc', endColorstr='#5d6cf3',GradientType=0 ); */ /* IE6-9 */
+  z-index: -1;
+  padding-bottom: 0;
+  margin-left: -15px !important;
+  margin-right: -105px !important;
+  background-color: #1c123d;
+}
+.headerTitle {
+  font-size: 2.3vw;
+  text-align: center;
+  font-family: "Lobster";
+  font-weight: 900;
+  font-style: normal;
+  z-index: 100;
+  /*  text-shadow: 1px 1px 3px #301ed1; */
+  margin-left: -42px;
+  background: rgb(93, 108, 243);
+  background: linear-gradient(
+    90deg,
+    rgba(196, 66, 187, 1) 10%,
+    rgba(93, 108, 243, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(196, 66, 187, 1) 10%,
+    rgba(93, 108, 243, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(196, 66, 187, 1) 10%,
+    rgba(93, 108, 243, 1) 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.headerTitle p {
+}
+.code55social {
+  line-height: 1px;
+}
+.code55social li {
+  display: inline-block;
+  margin: 0 8px;
+}
+.sosyal {
+  text-align: center;
+}
+.sosyaliconlar {
+  font-size: 30px !important;
+  background: rgba(93, 108, 243, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(191, 53, 188, 1) 1%,
+    rgba(93, 108, 243, 1) 70%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 25px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  opacity: 0.9;
+  /* text-shadow: 2px 2px 5px #4b39e6; */
+}
+
+.sosyaliconlar:hover {
+  opacity: 0.7;
+}
+.headerlogo {
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 100%;
+  background-size: contain;
+  z-index: 1000;
+}
+.sosyalkolon {
+  margin: 0 auto;
+}
+.sosyalStil {
+  z-index: 100;
+  margin: 5%;
+}
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5d6cf3+0,5d6cf3+0,bf35bc+100 */
+/* background: #5d6cf3; /* Old browsers */
+/* background: -moz-linear-gradient(top, #5d6cf3 0%, #5d6cf3 0%, #bf35bc 100%); */ /* FF3.6-15 */
+/* background: -webkit-linear-gradient(top, #5d6cf3 0%,#5d6cf3 0%,#bf35bc 100%);  */ /* Chrome10-25,Safari5.1-6 */
+/* background: linear-gradient(to bottom, #5d6cf3 0%,#5d6cf3 0%,#bf35bc 100%);  */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d6cf3', endColorstr='#bf35bc',GradientType=0 );  */ /*IE6-9 */
+
+@media only screen and (max-width: 793px) and (min-width: 768px) {
+  .code55social li {
+    display: block;
+    margin: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .code55social li {
+    display: inline-block;
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .headerTitle {
+    font-size: 5vw;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .headerTitle {
+    font-size: 2.23vw;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  .headerlogo {
+    background-position: center center;
+  }
+  .code55social {
+    padding-left: 6%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .sosyaliconlar {
+    font-size: 22px !important;
+    letter-spacing: 0px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    opacity: 0.9;
+  }
+  .headerlogo {
+    width: 300%;
+    margin-left: 27%;
+  }
+  .headerTitle {
+    margin: 0 10%;
+  }
+}
+
+/******* Slider  *******/
+
+.sectionRow {
+  top: 0 !important;
+  margin: 0 auto !important;
+  vertical-align: middle;
+  align-items: center;
+  margin-left: -15px !important;
+  margin-right: -105px !important;
+}
+.indexAri {
+  margin-right: -15px;
+  margin-left: -15px;
+  position: relative;
+  min-height: 70vh;
+  color: #ffffff;
+  -webkit-transform: none !important;
+  transform: none !important;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.indexFirstImg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  overflow: hidden;
+  -ms-background-size: cover;
+  z-index: -1;
+  opacity: 1;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+.animeTextGif {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  overflow: hidden;
+  -ms-background-size: cover;
+  z-index: 100;
+  margin-left: -21%;
+}
+.imgAnime {
+  margin-top: 2px;
+}
+.animeH1First {
+  font-weight: 560;
+  letter-spacing: 1px;
+  color: white;
+}
+.animeH1Second {
+  margin-left: -26%;
+  letter-spacing: 0.9px;
+  font-weight: 530;
+  color: white;
+}
+.indexFirst {
+  position: absolute;
+  top: 0px;
+}
+.indexFirstWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5vw;
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
+  /* display: flex; */
+}
+.secondAnimeRow {
+  top: 0;
+  margin: 0 auto;
+  text-align: center !important;
+  align-items: center !important;
+  vertical-align: middle !important;
+}
+
+.indexHeaderGroup {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+}
+.headerStil {
+  text-align: center;
+}
+
+.indexHeadFirst {
+  font-weight: normal;
+  color: white !important;
+  font-size: 0.9em !important;
+  position: relative;
+  word-wrap: break-word;
+  margin-left: -24%;
+  letter-spacing: 0.7px;
+}
+
+.indexHeadSecond {
+  color: white !important;
+  font-weight: 700;
+  font-size: 2em;
+  word-wrap: break-word;
+  display: inline-block !important;
+  position: relative !important;
+  z-index: 1 !important;
+  margin: 0 !important;
+  margin-right: -0.1em;
+  letter-spacing: 0.05em;
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 1);
+}
+
+.buttonFirstDiv {
+  display: inline-block;
+  align-items: center;
+  vertical-align: middle;
+}
+.btnDiv {
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+  height: 43px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: #353547;
+  width: 168px;
+  border-radius: 5px;
+  z-index: 100;
+  float: left;
+  margin-right: 10px;
+  padding: 7px;
+  color: white;
+  background-attachment: fixed;
+  margin-left: 1px;
+  margin-top: 1px;
+}
+.btnDiv:hover {
+  opacity: 0.9;
+}
+.ekBorder {
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+  height: 47px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(191, 53, 188, 1) 1%,
+    rgba(93, 108, 243, 1) 70%
+  );
+  width: 173px;
+  border: 1px solid;
+  border-radius: 5px;
+  z-index: 10;
+  float: left;
+  margin-right: 10px;
+  margin-left: 1px;
+  margin-top: 1px;
+}
+.btnBorderDiv {
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+  height: 45px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 172px;
+  border: 1px solid white;
+  border-radius: 5px;
+  z-index: 100;
+  float: right;
+  padding: 7px;
+  color: white;
+  background-color: transparent;
+  margin-left: 1px;
+  margin-top: 1px;
+}
+.btnBorderDiv:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(196, 66, 187, 1) 25%,
+    rgba(93, 108, 243, 1) 100%
+  );
+  /* background: #5d6c */
+  transition: all 0.5s ease-in;
+  border-color: transparent;
+}
+.firstDiv {
+  padding: 2.5%;
+
+  z-index: 10;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 7%;
+}
+.secondDiv {
+  text-align: center;
+  margin: 5%;
+}
+.animeDivFirst {
+  margin-left: 13%;
+}
+@media only screen and (max-width: 1197px) {
+  .animeTextGif {
+    margin: 0 auto;
+  }
+  .animeH1Second {
+    margin: 0 auto;
+  }
+  .indexHeadFirst {
+    margin-left: 0;
+  }
+  .indexHeaderGroup {
+    display: block;
+  }
+  .imgAnime {
+    width: 130%;
+  }
+  .animeDivFirst {
+    margin-left: auto;
+  }
+  .indexFirstWrapper {
+    margin-left: -7%;
+  }
+
+  .animeH1First {
+    font-weight: 600;
+    font-size: 37px;
+  }
+  .animeH1Second {
+    font-size: 37px;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+  .btnDiv {
+    height: 6vh;
+    width: 14.33vw;
+  }
+  .ekBorder {
+    height: 6.5vh;
+    width: 14.8vw;
+  }
+  .btnBorderDiv {
+    height: 6.3vh;
+    width: 15vw;
+  }
+}
+@media only screen and (max-width: 827px) {
+  .imgAnime {
+    width: 125%;
+  }
+  .indexFirstWrapper {
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .indexFirstWrapper {
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .imgAnime {
+    width: 140%;
+  }
+}
+
+@media only screen and (max-width: 466px) {
+  .btnDiv {
+    width: 23vw;
+    font-size: 4vw;
+    height: 9.5vw;
+    padding: 1.7vw;
+    margin-top: 0.5px;
+  }
+  .ekBorder {
+    width: 24.5vw;
+    font-size: 4vw;
+    height: 10.4vw;
+  }
+
+  .btnBorderDiv {
+    width: 23vw;
+    font-size: 4vw;
+    height: 10.1vw;
+  }
+  .animeH1Second {
+    font-size: 31px;
+  }
+  .animeH1First {
+    font-size: 30px;
+  }
+  .imgAnime {
+    width: 130%;
+    height: 11vh;
+  }
+}
+
+/******** Content  **************/
+
+.middleContent {
+  background-image: url(../images/digital_world.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 5%;
+  padding: 30px;
+  background-position: bottom center;
+}
+.ozelDiv {
+  vertical-align: middle;
+  align-items: flex-start;
+  text-align: left;
+  padding: 8% 8%;
+  color: white;
+}
+.middleContent h3 {
+  font-weight: 700;
+}
+.contentRow {
+  margin-left: -45px !important;
+  margin-right: -45px !important;
+  padding: 5% 0 1% 0;
+}
+.hrStil {
+  height: 0.7px;
+  transform: scaleX(1);
+  transition: transform 250ms ease-in-out;
+  background: rgb(93, 108, 243);
+  background: linear-gradient(
+    90deg,
+    rgba(196, 66, 187, 1) 25%,
+    rgba(93, 108, 243, 1) 100%
+  );
+  /* -webkit-background-clip: text; */ /* textlerde yazılarda kullanılır*/
+  -webkit-text-fill-color: transparent;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -15px !important;
+  margin-right: -90px !important;
+}
+.kurumDiv {
+  margin: 5%;
+}
+.kurumsalBaslik {
+  text-align: center;
+  margin: 1% 5%;
+  font-size: 40px;
+  font-weight: 600;
+  color: #68686a;
+  letter-spacing: 0.1px;
+}
+.kurumsalDetayBaslik {
+  text-align: center;
+  padding: 0.5% 10%;
+}
+
+.kurumsalDetayBaslik:after {
+  text-decoration: none;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3px;
+  margin-top: 15px;
+  background: #5d6cf3;
+  transform: scaleX(0.2);
+  transition: transform 250ms ease-in-out;
+}
+
+.kurumBox {
+  box-shadow: 0 0 3px rgb(0 0 0 / 20%);
+  /* border-top: 8px solid #1a1a1a; */
+  border-radius: 6px;
+  border: 1px solid #dbdbe0;
+  margin: 2% -0.7%;
+}
+.kurumBoxSecond {
+  box-shadow: none;
+  border-radius: 6px;
+  padding: 10px;
+  border: 2px solid #5d6cf3;
+  margin: 7px;
+  word-wrap: break-word;
+  min-height: 150px;
+}
+.firstKurum {
+  width: 16%;
+  float: left;
+  position: relative;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  overflow: hidden;
+  background-attachment: fixed;
+  z-index: -1;
+  margin: 18px;
+}
+.secondKurum {
+  width: 75%;
+  position: relative;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left;
+  word-wrap: break-word;
+  float: right;
+  /*  background-color: #fff; */
+  background-clip: border-box;
+  box-shadow: none;
+  background-attachment: fixed;
+  padding: 8px;
+}
+.firstKurum-4d {
+  margin-top: 10px;
+}
+.sosyalImageStil {
+  height: 100px;
+  margin: 0 auto;
+  width: 105% !important;
+}
+.secondKurum h5 {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.secondKurum p {
+  font-size: 14px;
+}
+.kurumImgFirst {
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+.scrollStil {
+  right: 25px;
+  text-align: right;
+  margin: 0 auto;
+  vertical-align: middle;
+  top: 50%;
+  margin-bottom: 40px;
+  margin-top: -15px;
+  cursor: pointer;
+  opacity: .9;
+  z-index: 1000;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*************************************/
+.digitRow {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.digitBox {
+  border-radius: 6px;
+  margin: 2% -0.7%;
+}
+
+.digitBoxSecond {
+  border-radius: 6px;
+  padding: 10px;
+  margin: 20px 30px;
+  word-wrap: break-word;
+  min-height: 500px;
+  /*  box-shadow: 0 0 3px rgb(93 109 243 / 20%);
+  background-color: rgb(93 109 243 / 5%); */
+}
+.firstDigit {
+  width: 75%;
+  position: relative;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  overflow: hidden;
+  background-attachment: fixed;
+  z-index: -1;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.firstDigitSag {
+  width: 75%;
+  position: relative;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  overflow: hidden;
+  background-attachment: fixed;
+  z-index: -1;
+  margin: 0 auto;
+  margin-top: 24px;
+  border-radius: 10px;
+}
+.secondDigit {
+  width: 75%;
+  position: relative;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  word-wrap: break-word;
+  background-clip: border-box;
+  box-shadow: none;
+  background-attachment: fixed;
+  padding: 8px;
+  margin: 0 auto;
+}
+.secondDigit h5 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 16px 0;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.secondDigit p {
+  font-size: 14px;
+}
+.digitImgFirst {
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+.iletisimRow {
+  /* height: 25vw; */
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgba(191, 53, 188, 1) 50%,
+    rgba(93, 108, 243, 1) 100%
+  );
+  max-height: 119vh;
+  margin-right: -135px !important;
+}
+#iletisimRow .form-control {
+  opacity: 0.6;
+  background-image: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  outline: none !important;
+  border: none !important;
+}
+#iletisimRow .form-control:focus {
+  outline: 0 !important;
+  -webkit-box-shadow: transparent;
+  box-shadow: transparent;
+  border: none !important;
+}
+.form-control::-webkit-input-placeholder {
+  color: #b1acac !important;
+}
+.form-control:-moz-placeholder {
+  color: #b1acac !important;
+}
+.form-control::-moz-placeholder {
+  color: #b1acac !important;
+}
+.form-control:-ms-input-placeholder {
+  color: #b1acac !important;
+}
+
+.mesajHeader {
+  color: #4f545c;
+  float: left;
+  margin-top: -10vh;
+}
+.mesajHeader h4 {
+  color: #3f4247;
+  font-size: 25px;
+  font-weight: 900;
+  opacity: 1;
+  margin-bottom: 25px;
+}
+.mesajHeader h4:after {
+  text-decoration: none;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  margin-top: 15px;
+  background: white;
+  transform: scaleX(0.2);
+  transition: transform 250ms ease-in-out;
+  opacity: 0.5;
+}
+.mesajHeader p {
+  color: #3f4247;
+  font-size: 16px;
+}
+.adresIcon {
+  color: #3f4247;
+}
+
+.form_butonu {
+  font-size: 16px !important;
+  line-height: 1.42857143;
+  color: white;
+  opacity: 0.6;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid white !important;
+  padding: 0.5rem 1rem !important;
+}
+.form_butonu:hover {
+  border: 1px solid #5d6cf3 !important;
+  color: white !important;
+  transition: all 0.5s ease-in;
+  background-color: #bf35bc !important;
+  opacity: 0.9;
+  outline: 0 !important;
+  border: 1px solid #bf35bc !important;
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(255, 255, 255) inset !important;
+}
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(02, 93, 93) !important;
+}
+.adresIcon {
+}
+.formDiv {
+  padding: 40px 30px;
+  margin: 1%;
+}
+#formHeader {
+  text-transform: uppercase;
+  color: white;
+  opacity: 0.9;
+  line-height: 3.5;
+}
+
+.footerRow {
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+  min-height: 19vh;
+  margin-left: -15px !important;
+  margin-right: -105px !important;
+  background-color: #1c123d;
+  max-height: 35vh;
+}
+.ulfooter {
+  display: block;
+  list-style-type: none;
+}
+.liFooter {
+  float: left;
+}
+.liFooterSecond {
+  float: left;
+  margin-left: 190px;
+}
+.divFooter {
+  margin: 0 auto;
+  top: 50%;
+  margin-left: 200px;
+}
+.MiddleFooter {
+  margin: 10px 50px;
+}
+.markaFooter {
+  margin: 40px 10px;
+}
+.markaFooter p {
+  color: white !important;
+  opacity: 0.7;
+}
+.hrStilFooter {
+  height: 0.7px;
+  transform: scaleX(1);
+  transition: transform 250ms ease-in-out;
+  background: rgb(93, 108, 243);
+  background: linear-gradient(
+    90deg,
+    rgba(196, 66, 187, 1) 25%,
+    rgba(93, 108, 243, 1) 100%
+  );
+  /* -webkit-background-clip: text; */ /* textlerde yazılarda kullanılır*/
+  -webkit-text-fill-color: transparent;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+}
+.footerVerticalLine {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Lobster";
+  font-weight: 900;
+  font-style: normal;
+  background: rgb(93, 108, 243);
+  background: linear-gradient(
+    90deg,
+    rgba(196, 66, 187, 1) 5%,
+    rgba(93, 108, 243, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(196, 66, 187, 1) 5%,
+    rgba(93, 108, 243, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(196, 66, 187, 1) 5%,
+    rgba(93, 108, 243, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-clip: text;
+}
+@media only screen and (max-width: 992px) {
+  .mesajHeader {
+    margin-top: 11vh;
+    float: none;
+  }
+}
+@media only screen and (max-width: 1183px) {
+  .divFooter {
+    margin-left: 0;
+  }
+  .liFooter {
+    float: none !important;
+    margin-left: 0 !important;
+  }
+  .liFooterSecond {
+    float: none !important;
+    margin-left: 0 !important;
+  }
+  .hrStilFooter {
+    margin-top: 15px;
+  }
+}
